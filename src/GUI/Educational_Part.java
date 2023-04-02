@@ -19,6 +19,7 @@ public class Educational_Part extends javax.swing.JFrame {
      */
     public Educational_Part() {
         initComponents();
+      
     }
 
     /**
@@ -116,6 +117,7 @@ public class Educational_Part extends javax.swing.JFrame {
 
         jButton2.setFont(new java.awt.Font("Javanese Text", 0, 14)); // NOI18N
         jButton2.setText("Continue");
+        jButton2.setMinimumSize(new java.awt.Dimension(72, 40));
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton2ActionPerformed(evt);

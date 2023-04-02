@@ -5,6 +5,8 @@
 package GUI;
 
 import Allclass.Basic_data;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import javax.swing.JTextField;
 
 /**
@@ -18,6 +20,8 @@ public class Generel_Part extends javax.swing.JFrame {
      */
     public Generel_Part() {
         initComponents();
+        
+  
     }
 
     /**
@@ -172,12 +176,15 @@ public class Generel_Part extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+   
+     
     JTextField[] textFields = {Name, Fa_name,Ma_name,Add1,Add2,Mob,Sex,Nationality,Dob};
     Basic_data n1 = new Basic_data();
     n1.set(textFields);
     Educational_Part one=new Educational_Part();
     one.setVisible(true);
-    setVisible(false);
+    setVisible(false); 
+        
     
         
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -240,4 +247,8 @@ public class Generel_Part extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
+
+    public Object getBtnNext() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
