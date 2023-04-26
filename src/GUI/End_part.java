@@ -4,6 +4,7 @@
  */
 package GUI;
 
+
 import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
@@ -76,7 +77,6 @@ public class End_part extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Javanese Text", 0, 16)); // NOI18N
         jButton3.setText("Open");
-        jButton3.setBorder(null);
         jButton3.setPreferredSize(new java.awt.Dimension(86, 40));
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,7 +87,6 @@ public class End_part extends javax.swing.JFrame {
 
         jButton4.setFont(new java.awt.Font("Javanese Text", 0, 16)); // NOI18N
         jButton4.setText("Exit");
-        jButton4.setBorder(null);
         jButton4.setPreferredSize(new java.awt.Dimension(86, 40));
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

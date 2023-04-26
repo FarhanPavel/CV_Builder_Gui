@@ -32,34 +32,43 @@ public class Basic_data extends Alldata {
         sex=data[6];
         nationality=data[7];
         dob=data[8];
+      
+
         try {
-            Formatter file =new Formatter("pavel.html");
-            file.format("%s\n","<h1 style=color:blue align=center >Curriculum Vitae<h1>");
-            file.format("%s\n\n\n\n\n\n","<table border=1 align =center width=1000 height=100 cellspacing=0 cellpadding=6>");
-            file.format("%s","<tr><td><font size=5>Name</font></td>");
-            file.format("%s%s%s","<td colspan=3><font size=5>",name,"</td></tr>");
-            file.format("%s","<tr><td><font size=5>Father's Name</font></td>");
-            file.format("%s%s%s","<td colspan=3><font size=5>",father_name,"</td></tr>");
-            file.format("%s","<tr><td><font size=5>Mother's Name</font></td>");
-            file.format("%s%s%s","<td colspan=3><font size=5>",mother_name,"</td></tr>");
-            file.format("%s","<tr><td><font size=5>Present Address</font></td>");
-            file.format("%s%s%s","<td colspan=3><font size=5>",add1,"</td></tr>");
-            file.format("%s","<tr><td><font size=5>Permanent Address</font></td>");
-            file.format("%s%s%s","<td colspan=3><font size=5>",add2,"</td></tr>");
-            file.format("%s","<tr><td><font size=5>Moblie Number</font></td>");
-            file.format("%s%s%s","<td colspan=3><font size=5>",mob,"</td></tr>");
-            file.format("%s","<tr><td><font size=5>Date Of Birth</font></td>");
-            file.format("%s%s%s","<td colspan=3><font size=5>",dob,"</td></tr>");
-            file.format("%s","<tr><td><font size=5>Sex</font></td>");
-            file.format("%s%s%s","<td colspan=3><font size=5>",sex,"</td></tr>");
-            file.format("%s","<tr><td><font size=5>Nationality</font></td>");
-            file.format("%s%s%s","<td colspan=3><font size=5>",nationality,"</td></tr>");
-            file.format("%s","<tr><td colspan=4><font size=5>Educational Qualification</font></td></tr>");
-            file.format("%s","<tr><td><font size=5>Degree</font></td>");
-            file.format("%s","<td><font size=5>Board/University</font></td>");
-            file.format("%s","<td><font size=5>GPA/CGPA</font></td>");
-            file.format("%s","<td><font size=5>Pass.Year</font></td></tr>");
-             file.close();
+  Formatter file = new Formatter("pavel.html");
+file.format("%s\n", "<html><head><style>body {background-color:rgb(240, 240, 240) ;}</style></head><body>");
+file.format("%s\n","<style type=\"text/css\">#printbtn { display:flex;margin:0 auto; bottom: 0; text-align: center; } @media print { #printbtn { display: none; } }</style><input id=\"printbtn\" type=\"button\" value=\"Print this page\" onclick=\"window.print()\">");
+file.format("%s\n", "<h1 style=color:black align=center >Curriculum Vitae<h1>");
+file.format("%s\n\n\n\n\n\n", "<table border=1 align=center width=1000 height=100 cellspacing=0 cellpadding=6>");
+
+// Add personal information with mixed background colors
+file.format("<tr><td bgcolor=#BFBFBF><font size=5>Name</font></td>");
+file.format("<td colspan=3 bgcolor=#E6E6E6><font size=5>%s</td></tr>", name);
+file.format("<tr><td bgcolor=#BFBFBF><font size=5>Father's Name</font></td>");
+file.format("<td colspan=3 bgcolor=#E6E6E6><font size=5>%s</td></tr>", father_name);
+file.format("<tr><td bgcolor=#BFBFBF><font size=5>Mother's Name</font></td>");
+file.format("<td colspan=3 bgcolor=#E6E6E6><font size=5>%s</td></tr>", mother_name);
+file.format("<tr><td bgcolor=#BFBFBF><font size=5>Present Address</font></td>");
+file.format("<td colspan=3 bgcolor=#E6E6E6><font size=5>%s</td></tr>", add1);
+file.format("<tr><td bgcolor=#BFBFBF><font size=5>Permanent Address</font></td>");
+file.format("<td colspan=3 bgcolor=#E6E6E6><font size=5>%s</td></tr>", add2);
+file.format("<tr><td bgcolor=#BFBFBF><font size=5>Mobile Number</font></td>");
+file.format("<td colspan=3 bgcolor=#E6E6E6><font size=5>%s</td></tr>", mob);
+file.format("<tr><td bgcolor=#BFBFBF><font size=5>Date Of Birth</font></td>");
+file.format("<td colspan=3 bgcolor=#E6E6E6><font size=5>%s</td></tr>", dob);
+file.format("<tr><td bgcolor=#BFBFBF><font size=5>Sex</font></td>");
+file.format("<td colspan=3 bgcolor=#E6E6E6><font size=5>%s</td></tr>", sex);
+file.format("<tr><td bgcolor=#BFBFBF><font size=5>Nationality</font></td>");
+file.format("<td colspan=3 bgcolor=#E6E6E6><font size=5>%s</td></tr>", nationality);
+
+// Add educational qualification with mixed background colors
+file.format("<tr><td colspan=4 bgcolor=#BFBFBF style=text-align:center;><font size=5>Educational Qualification</font></td></tr>");
+file.format("<tr><td bgcolor=#BFBFBF><font size=5>Degree</font></td>");
+file.format("<td bgcolor=#BFBFBF><font size=5>Board/University</font></td>");
+file.format("<td bgcolor=#BFBFBF><font size=5>GPA/CGPA</font></td>");
+file.format("<td bgcolor=#BFBFBF><font size=5>Pass.Year</font></td></tr>");
+
+      file.close();
             
         } catch (Exception e) {
             System.out.println(e);
